@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- html 단축작성 -->
+    <!-- 태그*6       : 태그를 6개 만든다 -->
+    <!-- div*6 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- 태그1>태그2   : 태그1 안에 태그 2를 만든다-->
+    <!-- div>p -->
+    <div>
+        <p></p>
+    </div>
+
+    <!-- table>tr*6>td*4 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <!-- 셀병합 명령어 -->
+            <!-- colspan="칸수" : 가로로 칸수만큼 병합 -->
+            <!-- rowspan="칸수" : 세로로 칸수만큼 병합-->
+
+            <!-- 실제로는 병합보다 칸을 늘려주는 방식으로 작동하니 -->
+            <!-- 넘친 td는 지워주면 된다. -->
+            <td colspan="4"></td>
+        </tr>
+        <tr>
+            <td rowspan="5"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

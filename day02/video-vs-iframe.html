@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            width: 200px;
+        }
+
+        iframe {
+            width: 500px;
+        }
+
+        .test {
+            width: 300px;
+            height: 100%;
+            background-color: gray;
+        }
+
+        .iframe-container {
+            width: 100%;
+            padding-top: 56.25%;
+            height: 0;
+
+            position: relative;
+        }
+
+        .iframe-container>iframe {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 비디오는 브라우저가 크기와 비율을 인식해 가로 사이즈만 설정하더라도 비율대로 세로 사이즈를 정해준다 -->
+    <video src="korea_video.mp4"></video>
+
+    <!-- 아이프레임으로 가져온 영상은 영상처럼 보이지만 사실은 웹사이트이기때문에 가로사이즈만 설정했을때 세로사이즈 설정이 안된다. -->
+    <iframe src="https://www.youtube.com/embed/7RnzOZt0egM" title="보답은 핑계고" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+    <div class="test"></div>
+
+    <!-- .iframe-container를 16:9비율로 만들면 된다 -->
+    <div class="iframe-container">
+        <iframe src="https://www.youtube.com/embed/7RnzOZt0egM" title="보답은 핑계고" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+
+</body>
+
+</html>
