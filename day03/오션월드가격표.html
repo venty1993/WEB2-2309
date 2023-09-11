@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            /* 셀 사이의 간격 설정 */
+            border-spacing: 20px;
+            /* 간격을 0으로 했을때 선이 만나면서 굵어진다. */
+            border-spacing: 0;
+            /* 테두리를 겹쳐준다 */
+            border-collapse: collapse;
+
+
+        }
+
+        td {
+            /* 테이블 내 수직 정렬 */
+            vertical-align: bottom;
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        .test {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            /* 이 속성은 테이블에서만 작동한다. */
+            vertical-align: bottom;
+
+            /*            
+            예전방식
+            줄높이와 컨텐츠 높이를 맞춰 가운데정렬
+            두줄 입력 불가능
+            line-height: 300px;
+            */
+
+            /* 현재 쓰기 좋은 방식 */
+            /* 줄높이 유지한상태로 정렬 가능 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- 세로 줄에 디자인 적용할때 쓰는 태그 -->
+        <colgroup>
+            <col style="background-color: pink;">
+            <col>
+            <col>
+            <col>
+            <!-- 열도 병합이 가능하다. -->
+            <col span="2" style="background-color: rgb(48, 227, 104);">
+            <col>
+            <col>
+        </colgroup>
+        <!-- 행에 스타일 지정 가능 -->
+        <tr style="background-color: red;">
+            <td rowspan="3" colspan="2">구분</td>
+            <td colspan="2">하이시즌2</td>
+            <td colspan="2">하이시즌1</td>
+            <td colspan="2">미들시즌</td>
+
+        </tr>
+        <tr>
+            <!-- 한 셀에도 스타일 지정 가능 -->
+            <td colspan="2" style="background-color: blue;"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="test">
+        안녕하세요
+        <br>
+        두줄째
+
+    </div>
+</body>
+
+</html>
