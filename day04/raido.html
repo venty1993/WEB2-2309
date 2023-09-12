@@ -31,12 +31,41 @@
 
     <!-- div.input-container>div.contents*4>label+input:radio -->
 
-    <div class="input-container">
-        <div class="contents"><label for="">INFP</label><input type="radio" name="mbit" id=""></div>
-        <div class="contents"><label for="">INFJ</label><input type="radio" name="mbit" id=""></div>
-        <div class="contents"><label for="">ISTJ</label><input type="radio" name="mbit" id=""></div>
-        <div class="contents"><label for="">ENTJ</label><input type="radio" name="mbit" id=""></div>
-    </div>
+    <form action="" method="get">
+        <div class="input-container">
+            <!-- label의 for 속성에는 연결할 input태그의 id를 입력해준다. -->
+            <!-- input의 value 속성에는 submit했을때 전송할 값을 입력한다. -->
+            <div class="contents"><label for="id-infp">INFP</label><input type="radio" name="mbit" id="id-infp"
+                    value="value-infp"></div>
+            <div class="contents"><label for="id-infj">INFJ</label><input type="radio" name="mbit" id="id-infj"
+                    value="value-infj"></div>
+            <div class="contents"><label for="id-istj">ISTJ</label><input type="radio" name="mbit" id="id-istj"
+                    value="value-istj"></div>
+            <div class="contents"><label for="id-entj">ENTJ</label><input type="radio" name="mbit" id="id-entj"
+                    value="value-entj"></div>
+        </div>
+
+        <select name="lang" id="lang-select-box">
+            <option value="">언어</option>
+            <option value="kor">한국어</option>
+            <option value="eng">eng</option>
+            <option value="chi">chi</option>
+            <option value="jp">jp</option>
+            <option value="hi">hi</option>
+        </select>
+
+        <textarea name="장문" id="long-text" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="보내1313기">
+
+        <button type="button">그냥버튼</button>
+        <button type="submit">
+            <div class="button-inner" style="display: flex; flex-direction: column;">
+                <p style="font-size: 24px; font-weight: bold; background-color: red;">윗글씨</p>
+                <p>아랫글씨</p>
+            </div>
+        </button>
+    </form>
 </body>
 
 </html>
