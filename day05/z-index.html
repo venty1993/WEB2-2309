@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #222;
+            position: absolute;
+        }
+
+        .front-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            z-index: 2;
+        }
+
+        .back-box {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="front-box">앞박스</div>
+    <div class="back-box">뒷박스</div>
+
+    <!-- position absolute로 컨텐츠가 겹쳤을때 무엇을 위에 보여줄지 결정하는 속성 -->
+    <!-- position이 적용되어있어야 z-index속성도 적용된다. -->
+
+    <!-- z-index를 많이 써야하는 디자인일경우 -->
+    <!-- 1,2,3 같이 작은 숫자로 주는게 아니라 -->
+    <!-- 10,20,30 or 100 200 300 처럼 큰 값을 주는게 좋다. -->
+    <!-- 왜냐하면? -->
+    <!-- 1과 2 사이에 컨텐츠를 넣을수가없기때문에 -->
+    <!-- 새로 만들어진 컨텐츠에게 지정해줄 z-index 여백을 만들어주는게 좋다. -->
+</body>
+
+</html>

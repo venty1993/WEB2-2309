@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #222;
+
+            /* position: static; 포지션 기본값 */
+
+            top: 20px;
+            left: 200px;
+        }
+
+        .relative-box {
+            position: relative;
+        }
+
+        .absolute-box {
+            position: absolute;
+        }
+
+        .test-box {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #222;
+
+            position: relative;
+        }
+
+        .test-absolute {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .fixed-box {
+            position: fixed;
+        }
+
+        .chat-bot {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #222;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+
+        }
+
+        .sticky-container {
+            height: 3000px;
+            background-image: linear-gradient(#DDD, #777);
+            margin-bottom: 1000px;
+        }
+
+        .sticky-box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position: 위치와 관련된 속성 -->
+    <!-- 부수적으로 top, left등등 위치에 관련된 속성과 함께 사용할수 있다. -->
+
+    <!-- div.box*3 -->
+    <div class="box static-box">static</div>
+    <div class="box relative-box">relative</div>
+    <div class="box absolute-box">absolute</div>
+
+
+    <!-- 부모에 position:relative를 적용 해줘야 제대로 정렬된다. -->
+    <div class="test-box">
+        <!-- static상태는 부모로 인정하지 않는다. -->
+        <div class="test-absolute">자식입니다</div>
+    </div>
+
+    <!-- position의 속성은 -->
+    <!-- static     : 기본값. 이 상태일때는 top, left등의 영향을 받지 않는다.-->
+    <!-- relative   : 흐름에 따라 배치되지만 position에 영향을 주고 받는 상태-->
+    <!-- absolute   : 절대좌표로 컨텐츠를 배치. 컨텐츠끼리 겹칠수있다. static은 부모로 인정하지 않는다.-->
+    <!-- fixed      : view를 기준으로 고정. 스크롤에 영향을 받지 않는다.-->
+    <!-- sticky     : 특정 영역 안에서 fixed처럼 작용하는 속성-->
+
+    <!-- view를 기준으로 고정 -->
+    <div class="box fixed-box">fixed</div>
+
+    <div class="chat-bot">챗봇</div>
+
+    <div class="sticky-container">
+        <div class="sticky-box"></div>
+    </div>
+</body>
+
+</html>

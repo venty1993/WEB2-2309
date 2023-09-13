@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 500px;
+
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        button {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid pink;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+
+            position: absolute;
+
+            top: calc(50% - 24px);
+            left: calc(50% - 24px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <video src="../day02/korea_video.mp4"></video>
+        <button class="play">▶</button>
+    </div>
+</body>
+
+</html>
