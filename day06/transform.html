@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 40px;
+        }
+
+        .translate-box {
+            /* 트랜스폼은 다른 개체들의 위치에 영향을 주지 않는다. */
+            /* 우리에게 보여주는 모습만 바꿔주는 개념 */
+            transform: translate(10px, 10px);
+            /* margin-left: 50px; */
+            /* margin-top: 50px; */
+        }
+
+        .scale-box {
+            /* scale은 배율로 조정된다. */
+            /* 0.5는 절반크기 */
+            transform: scale(0.5);
+            /* transform: scaleX(2); */
+            /* 박스안에 컨텐츠가 있을경우 X축 Y축 한방향으로만 늘리면 비율이 깨져버린다. */
+            /* 일반적으로 scale()을 이용한다. */
+        }
+
+        .rotate-box {
+            /* rotate에는 각도값을 넣는다. */
+            /* 예) 0deg, 180deg, 360deg */
+            transform: rotate(200deg);
+        }
+
+        .skew-box {
+            /* 컨텐츠에 왜곡을 만드는 속성 */
+            /* 사용하기도 직관적이지 않고 웹디자인에 적용하기 어려워 사용빈도 낮음. */
+            transform: skewX(25deg) skewY(25deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box translate-box"></div>
+    <div class="box scale-box">안녕하세요 박스에요</div>
+    <div class="box rotate-box"></div>
+    <div class="box skew-box"></div>
+
+    <!-- 이동시키기 : translate
+        traslate(x이동,y이동)
+        tranlateX(값)
+        translteY(값)
+        translteZ(값)
+        translte3D(값,값,값)
+    크기바꾸기 : scale
+        scale(x,y)
+        scaleX(값)
+        scaleY(값)
+        scaleZ(값)
+        scale3D(값,값,값)
+    기울이기 : skew
+        skew(x,y)
+        skewX(값)
+        skewY(값)
+        skewZ(값)
+        skew3D(값,값,값)
+    회전하기 : rotate
+        rotate(값)
+        rotate3D(값) -->
+</body>
+
+</html>
