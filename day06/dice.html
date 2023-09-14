@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dice {
+            position: relative;
+        }
+
+        .dice-face {
+            width: 160px;
+            height: 160px;
+
+            border: 1px solid #222;
+
+            color: white;
+            font-size: 36px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #444;
+
+            position: absolute;
+
+            transform: translate3d(0px, 0px, 80px);
+
+            opacity: 0.3;
+
+
+
+        }
+
+        .dice-face.one {
+            transform: translate3d(0px, 0px, 80px)rotateY(30deg);
+        }
+
+        .dice-face.two {}
+
+        .dice-face.three {}
+
+        .dice-face.four {}
+
+        .dice-face.five {}
+
+        .dice-face.six {}
+    </style>
+</head>
+
+<body>
+    <div class="dice">
+        <!-- div.dice-face{$}*6 -->
+        <div class="dice-face one">1</div>
+        <div class="dice-face two">2</div>
+        <div class="dice-face three">3</div>
+        <div class="dice-face four">4</div>
+        <div class="dice-face five">5</div>
+        <div class="dice-face six">6</div>
+    </div>
+</body>
+
+</html>
