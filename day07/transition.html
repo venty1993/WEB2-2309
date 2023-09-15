@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #222;
+            background-color: pink;
+            /* transition: 1s; */
+
+            /* transition-property          : 특정 속성에 애니메이션 부여할떄 이용(복수설정 가능) ; */
+            /* transition-duration          : 애니메이션의 지속시간(길수록 느리고 짧을수록 빠름) ; */
+            /* transition-timing-function   : 애니메이션의 가속도. 기본값도 훌륭하지만 특별한 가속도를 원한다면 
+                                              https://easings.net 등의 사이트에서 함수 참고 가능; */
+            /* transition-delay             : 애니메이션이 시작되기 전 지연시간; */
+
+            transition-property: background-color, width, height;
+            transition-duration: 1s, 1s, 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s, 1s, 2s;
+
+
+
+
+        }
+
+
+        /* .box에 마우스를 올렸을 때 */
+        .box:hover {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .나타나는 {
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 1s;
+        }
+
+        body:hover>.나타나는 {
+            transform: none;
+            opacity: 1;
+        }
+
+        .container {
+            overflow: hidden;
+        }
+
+        .숨어있다-나타나는 {
+            transform: translateY(100px);
+            transition: 1s;
+            opacity: 0;
+        }
+
+        body:hover .숨어있다-나타나는 {
+            transform: none;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="나타나는">안녕하세요. 제목입니다.</h2>
+
+
+    <div class="container">
+        <h2 class="숨어있다-나타나는">숨어있다 나타나는 제목입니다.</h2>
+    </div>
+</body>
+
+</html>

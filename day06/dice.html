@@ -8,6 +8,9 @@
     <style>
         .dice {
             position: relative;
+            transform-style: preserve-3d;
+            width: 160px;
+            height: 160px;
         }
 
         .dice-face {
@@ -31,23 +34,35 @@
 
             opacity: 0.3;
 
+            transform-origin: center center -80px;
+
 
 
         }
 
         .dice-face.one {
-            transform: translate3d(0px, 0px, 80px)rotateY(30deg);
+            transform: translate3d(0px, 0px, 80px) rotateY(0deg);
         }
 
-        .dice-face.two {}
+        .dice-face.two {
+            transform: translate3d(0px, 0px, 80px) rotateY(90deg);
+        }
 
-        .dice-face.three {}
+        .dice-face.three {
+            transform: translate3d(0px, 0px, 80px) rotateX(90deg);
+        }
 
-        .dice-face.four {}
+        .dice-face.four {
+            transform: translate3d(0px, 0px, 80px) rotateX(-90deg)
+        }
 
-        .dice-face.five {}
+        .dice-face.five {
+            transform: translate3d(0px, 0px, 80px) rotateY(270deg);
+        }
 
-        .dice-face.six {}
+        .dice-face.six {
+            transform: translate3d(0px, 0px, 80px) rotateY(180deg);
+        }
     </style>
 </head>
 
