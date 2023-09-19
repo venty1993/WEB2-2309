@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ani-container {
+            width: 150px;
+            height: 250px;
+            border: 1px solid black;
+        }
+
+        .stroke1 {
+            width: 50px;
+            height: 250px;
+            background-color: pink;
+        }
+
+        .stroke2 {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+        }
+
+        .stroke3 {
+            width: 50px;
+            height: 250px;
+            background-color: coral;
+        }
+
+        /* flex로 모양 만들기 */
+
+        /* .ani-container {
+            display: flex;
+            align-items: center;
+        } */
+
+
+        /* absolute로 모양 만들기 */
+
+        .ani-container {
+            position: relative;
+        }
+
+        .ani-container>div {
+            position: absolute;
+        }
+
+        .stroke1 {
+            top: 0;
+            left: 0;
+            animation: 선1번 5s infinite alternate;
+        }
+
+        .stroke2 {
+            top: 100px;
+            left: 50px;
+            animation: 선2번 5s infinite alternate;
+        }
+
+        .stroke3 {
+            top: 0;
+            left: 100px;
+            animation: 선3번 5s infinite alternate;
+        }
+
+
+        @keyframes 선1번 {
+            0% {
+                height: 0;
+            }
+
+            20% {
+                height: 250px;
+            }
+
+            100% {
+                height: 250px;
+            }
+        }
+
+        @keyframes 선2번 {
+            0% {
+                width: 0;
+            }
+
+            20% {
+                width: 0;
+            }
+
+            40% {
+                width: 50px;
+            }
+
+            100% {
+                width: 50px;
+            }
+        }
+
+        @keyframes 선3번 {
+            0% {
+                height: 0;
+            }
+
+            40% {
+                height: 0;
+            }
+
+            60% {
+                height: 250px;
+            }
+
+            100% {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="ani-container">
+            <div class="stroke1"></div>
+            <div class="stroke2"></div>
+            <div class="stroke3"></div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

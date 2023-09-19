@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .test {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            /* animation: 애니메이션이름 지속시간 가속도함수 재생지연 반복횟수 재생방향 재생후어떻게할것인지; */
+            /* animation: 마음대로정해도됨 2s ease 0s; */
+            animation-name: 마음대로정해도됨;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            /* animation-iteration-count: 2; */
+            animation-fill-mode: both;
+
+        }
+
+        /* .test:active {
+            transform: translate(300px, 50px);
+
+        } */
+
+        @keyframes 마음대로정해도됨 {
+            0% {
+                transform: none;
+            }
+
+            25% {
+                transform: translate(100px, 800px);
+
+            }
+
+            50% {
+                transform: translate(700px, 200px);
+
+            }
+
+            100% {
+                transform: translate(300px, 50px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">
+
+    </div>
+</body>
+
+</html>
