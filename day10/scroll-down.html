@@ -28,7 +28,7 @@
             box-sizing: border-box;
             border-radius: 16px;
             position: relative;
-            animation: mouse 1s infinite;
+            animation: mouse 2s infinite;
 
         }
 
@@ -41,7 +41,7 @@
             left: 50%;
             top: 30%;
             transform: translate(-50%, -50%);
-            animation: wheel 1s infinite;
+            animation: wheel 2s infinite;
 
         }
 
@@ -64,7 +64,7 @@
         @keyframes mouse {
             from {
                 opacity: 0;
-                transform: translateY(0);
+                transform: translateY(0) scale(0);
             }
 
             33% {
@@ -80,7 +80,7 @@
 
             to {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(20px) scale(0);
 
             }
 
