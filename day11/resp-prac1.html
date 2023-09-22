@@ -5,16 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
         .container {
             display: flex;
-            gap: 8px;
+            gap: 40px;
+            padding: 32px;
         }
 
         .content {
             width: 200px;
             height: 200px;
             background-color: gray;
+        }
+
+        @media screen and (max-width:1299px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:799px) {
+            .container {
+                padding: 16px;
+            }
+
         }
     </style>
 </head>
