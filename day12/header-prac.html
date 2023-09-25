@@ -7,7 +7,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
+        body {
+            height: 10000px;
+            background-image: linear-gradient(#333, #AAA);
+        }
 
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: white;
+            padding: 0 32px;
+            box-sizing: border-box;
+            height: 64px;
+            transition: 1s;
+            overflow: hidden;
+
+        }
+
+        header:hover {
+            height: 200px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* height: 100%; */
+        }
+
+        .header-list-container {
+            display: flex;
+            /* position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); */
+
+        }
+
+        .header-list-container>li>a {
+            display: block;
+            padding: 24px;
+        }
+
+        .inner-list-container {
+            position: absolute;
+        }
     </style>
 </head>
 
@@ -15,12 +59,24 @@
     <!-- https://www.kyobolifeinnostage.co.kr/ 헤더 만들기 연습 -->
     <header>
         <div class="container">
-            <h1 class="logo"><a href="#">로고</a></h1>
+            <h1 class="logo"><a href="#">로고가 좀더 길다면 어떻게될까?</a></h1>
             <nav>
-                <ul>
+                <ul class="header-list-container">
                     <li><a href="#">INNOSTAGE</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Apply</a></li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                        <ul class="inner-list-container">
+                            <li><a href="#">이노스테이지 기업</a></li>
+                            <li><a href="#">기업 탐색하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Apply</a>
+                        <ul class="inner-list-container">
+                            <li><a href="#">지원 프로그램</a></li>
+                            <li><a href="#">협업 제안</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Community</a></li>
                 </ul>
