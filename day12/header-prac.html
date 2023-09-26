@@ -95,6 +95,69 @@
             opacity: 1;
 
         }
+
+        .icon-container {
+            display: flex;
+            gap: 16px;
+        }
+
+        .hamberger-menu {
+            display: none;
+        }
+
+        #intro {
+            height: 100vh;
+            background-color: wheat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .intro-title-container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        #intro h2 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        #intro p {
+            font-size: 24px;
+        }
+
+
+        @media screen and (max-width:1365px) {
+            header {
+                height: 80px;
+            }
+
+            .container {
+                height: 100%;
+            }
+
+            .header-list-container {
+                display: none;
+            }
+
+            header:hover {
+                height: 80px;
+            }
+
+            .hamberger-menu {
+                display: block;
+            }
+
+            #intro {
+                height: 400px;
+            }
+
+        }
     </style>
 </head>
 
@@ -124,9 +187,20 @@
                     <li><a href="#">Community</a></li>
                 </ul>
             </nav>
-            <div class="icon-container"><a href="#">아이콘</a></div>
+            <div class="icon-container">
+                <a href="#">아이콘</a>
+                <a href="#" class="hamberger-menu">햄</a>
+            </div>
         </div>
     </header>
+    <section id="intro">
+        <div class="intro-title-container">
+            <h2>The stage for your growth</h2>
+            <p>교보생명과 스타트업이 함께 미래를 만들어갑니다.</p>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
