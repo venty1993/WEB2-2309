@@ -221,7 +221,75 @@
 
         #performance {
             background-color: #01B18B;
+            color: white;
+            padding: 100px 0;
         }
+
+        #performance>.section-container {
+            display: flex;
+        }
+
+        #performance .section-header-wrapper {
+            width: 50%;
+        }
+
+        #performance .section-header-wrapper>h2 {
+            color: white;
+        }
+
+        #performance .section-header-wrapper>h2::after {
+            background-color: #EEE;
+        }
+
+        #performance .section-header-wrapper>p {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        #performance .counter-list-container {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 24px;
+        }
+
+        .counter-container {
+            width: 45%;
+            border-top: 1px solid #ddd;
+            padding: 32px 0;
+        }
+
+        .counter-heading-wrapper {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 32px;
+        }
+
+        .temp-img {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, .8);
+        }
+
+        .counter-heading-wrapper>h3 {
+            color: rgba(255, 255, 255, .8);
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .counter-contents {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .counter {
+            font-size: 80px;
+        }
+
+        .counter-unit {
+            font-size: 15px;
+        }
+
 
         @media screen and (max-width:1365px) {
             header {
@@ -335,7 +403,7 @@
                         <h3>발굴 기업 수</h3>
                     </div>
                     <div class="counter-contents">
-                        <p class="counter">1307</p>
+                        <p class="counter">1,307</p>
                         <p class="counter-unit">개사</p>
                     </div>
                 </li>
@@ -373,6 +441,8 @@
         </div>
 
     </section>
+
+    <!-- 컬럼 갭 설명 -->
 
 </body>
 
